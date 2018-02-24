@@ -8,7 +8,10 @@ class Character:
 
 
 class Thief(Character):
-    sneaky = True
+    def __init__(self, name, sneaky=True, **kwargs):
+        super().__init__(name, **kwargs)
+        self.sneaky = sneaky
+
     def pickpocket(self):
         return  self.sneaky and bool(random.randint(0, 1))
 
