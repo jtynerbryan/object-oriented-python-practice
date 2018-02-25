@@ -13,13 +13,13 @@ class NumString:
 
     def __add__(self, other):
         if '.' in self.value:
-            return float(self.value) + other
+            return float(self) + other
         else:
-            return int(self.value) + other
+            return int(self) + other
 
     # r for reflected
     def __radd__(self, other):
-        self + other
+        return self + other
 
     # add in place
     def __iadd__(self, other):
