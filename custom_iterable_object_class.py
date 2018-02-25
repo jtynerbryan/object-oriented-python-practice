@@ -18,6 +18,5 @@ class Inventory:
     # use __iter__ with ## for item in (class instance) ##
     def __iter__(self):
         yield from self.slots
-
         # for item in self.slots:
         #     yield item
