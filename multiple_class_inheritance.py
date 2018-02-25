@@ -4,17 +4,17 @@ class Root:
         assert not hasattr(super(), 'draw')
 
 class Shape(Root):
-    def __init__(self, shapename, **kwds):
+    def __init__(self, shapename, **kwargs):
         self.shapename = shapename
-        super().__init__(**kwds)
+        super().__init__(**kwargs)
     def draw(self):
         print('Drawing.  Setting shape to:', self.shapename)
         super().draw()
 
 class ColoredShape(Shape):
-    def __init__(self, color, **kwds):
+    def __init__(self, color, **kwargs):
         self.color = color
-        super().__init__(**kwds)
+        super().__init__(**kwargs)
     def draw(self):
         print('Drawing.  Setting color to:', self.color)
         super().draw()
