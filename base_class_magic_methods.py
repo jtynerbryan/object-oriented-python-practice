@@ -9,4 +9,4 @@ class NumString:
         return int(self.value)
 
     def __float__(self):
-        return float(self.value)            
+        return float(self.value)
