@@ -1,7 +1,8 @@
 # make a version of str that's always reversed
 # remember str's are immutable
 # when creating custom built-ins from an immutable datatype, use new() instead of __inti__()
-# __new__ is a class method, not an instance method and does not take self as an argument
+# __new__ is used to create a new instance
+# __init__ is used to initialize and instance that has already been created
 class ReversedStr(str):
     def __new__(*args, **kwargs):
         self = str.__new__(*args, **kwargs)
