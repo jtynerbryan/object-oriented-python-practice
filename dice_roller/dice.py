@@ -40,6 +40,7 @@ class Die:
     def __repr__(self):
         return str(self.value)
 
+
 class D6(Die):
     def __init__(self, value=0):
         super().__init__(sides=6, value=value)
